@@ -1,0 +1,157 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-grey: hsl(204, 43%, 93%);
+  --gray-blue: hsl(218, 22%, 67%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1920px;
+  overflow-x: hidden;
+  font-family: "Karla";
+  background-color: var(--light-grey);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.one {
+  width: 370px;
+  height: 300px;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.two {
+  width: 370px;
+  height: 250px;
+  background-color: var(--cyan);
+}
+
+.three {
+  width: 370px;
+  height: 300px;
+  background-color: hsla(179, 62%, 43%, 0.7);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+h1 {
+  font-size: 25px;
+  color: var(--cyan);
+  padding-left: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  color: var(--bright-yellow);
+  padding-left: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: var(--gray-blue);
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 1.7;
+}
+
+h3 {
+  font-size: 25px;
+  color: white;
+  padding-left: 20px;
+}
+
+span {
+  font-size: 35px;
+  color: white;
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+p.month {
+  color: var(--light-grey);
+}
+
+p.two-text {
+  color: white;
+  font-size: 16px;
+  position: relative;
+  top: -20px;
+}
+
+button[type="submit"] {
+  padding: 15px 130px 15px 130px;
+  margin-left: 22px;
+  background-color: var(--bright-yellow);
+  border: transparent;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  top: -20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button[type="submit"]:hover {
+  background-color: hsla(71, 73%, 54%, 0.7);
+}
+
+p.info {
+  color: var(--light-grey);
+}
+
+.attribution {
+  text-align: center;
+}
+
+@media only screen and (min-width: 1400px) {
+  main {
+    display: grid;
+    margin-top: 150px;
+  }
+  .one {
+    width: 750px;
+    height: 250px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .two {
+    height: 300px;
+    width: 377px;
+    border-bottom-left-radius: 5px;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .three {
+    width: 373px;
+    border-bottom-left-radius: 0;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  p.intro {
+    font-size: 20px;
+  }
+  button[type="submit"] {
+    top: 10px;
+  }
+}
